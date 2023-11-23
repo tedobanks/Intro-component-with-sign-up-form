@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-intro-component-with-sign-up-form-GLLp2Sz4aN)
+- Live Site URL: [Live site URL](https://tedobanks.github.io/Intro-component-with-sign-up-form/)
 
 ## My process
 
@@ -46,6 +46,6 @@ Users should be able to:
 
 ## Author
 
-- Website - [@mrbankong](https://www.instagram.com/mrbankong)
+- Instagram - [@mrbankong](https://www.instagram.com/mrbankong)
 - Frontend Mentor - [@tedobanks](https://www.frontendmentor.io/profile/tedobanks)
 - Twitter - [@tedbankong](https://www.twitter.com/tedbankong)
