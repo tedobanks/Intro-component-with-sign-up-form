@@ -1,0 +1,262 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 100%, 74%);
+}
+
+.overlay {
+    width: 100%;
+    aspect-ratio: 375 / 1000;
+    background-image: url(./images/bg-intro-mobile.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    padding-inline: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.first-half {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
+.first-half h3 {
+    font-weight: 700;
+    font-size: 25px;
+    color: white;
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.first-half p {
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+
+.second-half {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.price-card {
+    width: 100%;
+    padding: 15px 0px 15px 0px;
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+
+.price-card h5 {
+    color: white;
+    font-weight: 700;
+    text-align: center;
+}
+
+.price-card h5 span {
+    font-weight: 400;
+}
+
+.form-card {
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-container {
+    width: 100%;
+}
+
+.field-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-bottom: 15px;
+}
+
+.input-field {
+    width: 100%;
+    height: 60px;
+    position: relative;
+}
+
+.img-container {
+    height: 100%;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 1000;
+    right: 15px;
+    top: 0;
+    bottom: 0;
+}
+
+.img-container img {
+    aspect-ratio: 1;
+    width: 100%;
+    object-fit: contain;
+}
+
+.custom-input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: 1px solid hsl(246, 25%, 77%);
+    border-radius: 8px;
+    padding-inline: 15px;
+    font-weight: 600;
+    color: hsl(249, 10%, 26%);
+}
+
+.custom-input::placeholder {
+    color: hsl(249, 10%, 26%, 0.88);
+    font-weight: 600;
+}
+
+.custom-input[data-validated="false"] {
+    border-width: 2px;
+    border-color: hsl(0, 100%, 74%);
+}
+
+.img-container[data-validated="true"] {
+    display: none;
+}
+
+.error-message {
+    color: hsl(0, 100%, 74%);
+    font-style: italic;
+    font-weight: 500;
+    font-size: 10px;
+}
+
+button {
+    width: 100%;
+    height: 60px;
+    background-color: hsl(154, 59%, 51%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    box-shadow: -1px -4px 4px hsl(249, 10%, 26%, 0.33) inset;
+    margin-bottom: 10px;
+}
+
+.tc-container {
+    width: 80%;
+}
+
+.tc-text {
+    font-size: 10px;
+    text-align: center;
+}
+
+.tc-text span {
+    font-weight: 700;
+    color: hsl(0, 100%, 74%);
+}
+
+@media only screen and (min-width: 992px) {
+    .overlay {
+        height: 100vh;
+        width: 100%;
+        aspect-ratio: 1412 / 800;
+        background-image: url(./images/bg-intro-desktop.png);
+    }
+
+    .container {
+        padding-inline: 25px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .first-half {
+        width: 50%;
+        align-items: start;
+        padding: 0px 1.25rem 0px 3.125rem;
+    }
+
+    .first-half h3 {
+        font-size: 35px;
+        text-align: start;
+    }
+
+    .first-half p {
+        text-align: start;
+        font-size: 13px;
+    }
+
+    .second-half {
+        width: 50%;
+        align-items: start;
+    }
+
+    .price-card {
+        width: 70%;
+    }
+
+    .form-card {
+        width: 70%;
+    }
+
+    #pricecard-break[data-visible="false"] {
+        display: none;
+    }
+
+    .custom-input {
+        border-radius: 4px;
+    }
+
+    .input-field {
+        height: 45px;
+    }
+
+    button {
+        height: 45px;
+        border-radius: 4px;
+    }
+}

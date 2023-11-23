@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro component with sign up form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+</head>
+
+<body>
+    <main>
+        <div class="overlay">
+            <div class="container">
+                <section class="first-half">
+                    <h3>Learn to code by <br id="leading-break">watching others</h3>
+                    <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+                        but understanding how developers think is invaluable.</p>
+                </section>
+                <section class="second-half">
+                    <div class="price-card">
+                        <h5>Try it free 7 days <span>then<br id="pricecard-break" data-visible="true"> $20/mo.
+                                thereafter</span></h5>
+                    </div>
+
+                    <!-- Form -->
+                    <div class="form-card">
+                        <div class="input-container">
+                            <div class="field-container">
+                                <div class="input-field">
+                                    <input type="text" class="custom-input" id="first-name" data-validated="true"
+                                        placeholder="First Name">
+
+                                    <!-- Error Icon -->
+                                    <div class="img-container" data-validated="true">
+                                        <img src="./images/icon-error.svg" alt="">
+                                    </div>
+                                </div>
+                                <p class="error-message"></p>
+                            </div>
+
+                            <div class="field-container">
+                                <div class="input-field">
+                                    <input type="text" class="custom-input" id="last-name" data-validated="true"
+                                        placeholder="Last Name">
+
+                                    <!-- Error Icon -->
+                                    <div class="img-container" data-validated="true">
+                                        <img src="./images/icon-error.svg" alt="">
+                                    </div>
+                                </div>
+                                <p class="error-message"></p>
+                            </div>
+
+                            <div class="field-container">
+                                <div class="input-field">
+                                    <input type="email" class="custom-input" id="email-address" data-validated="true"
+                                        placeholder="Email Address">
+
+                                    <!-- Error Icon -->
+                                    <div class="img-container" data-validated="true">
+                                        <img src="./images/icon-error.svg" alt="">
+                                    </div>
+                                </div>
+                                <p class="error-message"></p>
+                            </div>
+
+                            <div class="field-container">
+                                <div class="input-field">
+                                    <input type="password" class="custom-input" id="password" data-validated="true"
+                                        placeholder="Password">
+
+                                    <!-- Error Icon -->
+                                    <div class="img-container" data-validated="true">
+                                        <img src="./images/icon-error.svg" alt="">
+                                    </div>
+                                </div>
+                                <p class="error-message"></p>
+                            </div>
+
+                            <button id="submit">CLAIM YOUR FREE TRIAL</button>
+                        </div>
+                        <div class="tc-container">
+                            <p class="tc-text">By clicking the button, you are agreeing to our <span>Terms and
+                                    Services</span></p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
